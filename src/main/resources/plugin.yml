@@ -1,0 +1,6 @@
+name: Queue
+version: ${project.version}
+main: com.jpereirax.queue.Main
+description: Queue plugin for Bungeecord
+commands:
+  connect:
