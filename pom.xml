@@ -11,10 +11,26 @@
 
     <name>Queue</name>
 
-    <description>Queue plugin for Bungeecord</description>
+    <description>Simple queue plugin for bungeecord.</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>sonatype-oss-repo</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-api</artifactId>
+            <version>1.13-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -53,19 +69,4 @@
         </resources>
     </build>
 
-    <repositories>
-        <repository>
-            <id>sonatype-oss-repo</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-    </repositories>
-
-    <dependencies>
-        <dependency>
-            <groupId>net.md-5</groupId>
-            <artifactId>bungeecord-api</artifactId>
-            <version>1.13-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 </project>
