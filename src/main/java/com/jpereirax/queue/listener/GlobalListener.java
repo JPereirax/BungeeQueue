@@ -43,7 +43,7 @@ public class GlobalListener implements Listener {
         if (queue != null) {
             ProxiedPlayer target = queue.getPlayer();
             target.connect(queue.getServer());
-            target.sendMessage(new TextComponent(ChatColor.GREEN + "[Queue] Connected the server."));
+            target.sendMessage(new TextComponent(ChatColor.GREEN + "[Queue] Connected to server."));
 
             manager.remove(queue);
         }
