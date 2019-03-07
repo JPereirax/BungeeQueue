@@ -19,7 +19,7 @@ public class ConnectCommand extends Command {
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (!(sender instanceof ProxiedPlayer)) {
-            sender.sendMessage(new TextComponent(ChatColor.RED + "Only players execute this command."));
+            sender.sendMessage(new TextComponent(ChatColor.RED + "Only players can execute this command."));
             return;
         }
 
